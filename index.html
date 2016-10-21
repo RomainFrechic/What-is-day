@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui/dist/semantic.min.css">
+	<title>What-a-day</title>
+</head>
+<body>
+	<div id="body">
+		<div class="ui grid fourteen wide column centered global_div">
+			<div class="three wide column">
+				<h3>Jour</h3>
+				<div class="ui icon input">
+					<input id="inp" type="text" placeholder="Jour">
+				</div>
+			</div>
+			<div class="two wide column">
+				<h3>Mois</h3>
+				<select class="ui teal dropdown color" id="inp2">
+					<option value="1">Janvier</option>
+					<option value="2">Février</option>
+					<option value="3">Mars</option>
+					<option value="4">Avril</option>
+					<option value="5">Mai</option>
+					<option value="6">Juin</option>
+					<option value="7">Juillet</option>
+					<option value="8">Août</option>
+					<option value="9">Septembre</option>
+					<option value="10">Octobre</option>
+					<option value="11">Novembre</option>
+					<option value="12">Décembre</option>
+				</select>
+			</div>
+			<div class="three wide column">
+				<h3>Année</h3>
+				<div class="ui icon input">
+					<input id="inp3" type="text" placeholder="Année">
+				</div>
+			</div>
+		</div>
+		<div class="ui grid centered">
+			<button class="ui inverted blue button " id="valider">Valider</button>
+		</div>
+	</div>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/moment/moment.js"></script>
+	<script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
