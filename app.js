@@ -25,6 +25,11 @@
 				console.log(app.month);
 				console.log(app.year);
 			});	
+			$('#btnhide').on('click',function(){
+				
+				$(this).remove.app.puff();
+				console.log(show);
+			});
 		},
 
 		getDayArray: function(day,month,year){
@@ -38,9 +43,11 @@
 		},
 
 		puff:function(semaineJour){
-			$('#html').append('<div><div id="affichage"><h1>'+ semaineJour + '</h1></div></div>');
-			console.log(affichage);
-		},
+			$('#overlay').html('<div><button id="btnhide">x</button><h1>'+ semaineJour + '</h1></div>');
+			$('#overlay').css('display','block');
+			$('#hide').css('display','none');
+			$('#valider').css('display','none');
+		},  
 	};
 
 
